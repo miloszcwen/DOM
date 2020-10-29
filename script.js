@@ -1,14 +1,43 @@
+//it is important to cache selectors in variables
+var h1 = document.querySelector("h1");
 
+//selectors
+document.getElementByTagName
+document.getElementByClassName
+document.getElementById
+document.getElementById("bobo")
+
+document.querySelector("h1");
 document.querySelectorAll("h1");
 
-// document.querySelector("img").getAttribute("random");
+// element.getAttribute
+// element.setAttribute
+document.querySelector("li").getAttribute("random")
+document.querySelector("li").setAttribute("random","100")
+// var el=document.querySelectorAll("li");
+// var attr = el.getAttribute("random"); not working???
 
-document.getElementById("bobo").onclick = function(){
+//changing styles
+// style.{property} ok, but not recomended - separation of 
+//concerns (dont mix html(text) with css(style))
+//document.querySelector("h1").style.background="yellow";
+
+// className classList.add/remove/toggle
+var h1 = document.querySelector("h1");
+h1.className="coolTitle"+" animate__animated animate__swing";
+document.querySelector("li").classList.add("done");
+
+//innerHTML !!dangerous!!
+document.getElementById("clicker").onclick = function(){
 document.getElementById("status").innerHTML = "nice job!";
 }
 document.getElementById("status").onclick = function(){
 document.getElementById("status").innerHTML = "";
 }
+
+//parentElement children
+document.querySelectorAll("li")[1].parentElement;
+document.querySelector("li").parentElement;
 
 // var database = [
 // 	{
