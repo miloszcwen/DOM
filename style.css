@@ -1,0 +1,10 @@
+.coolTitle{
+	text-align: center;
+	font-family: cursive;
+	font-size: 3em;
+	text-shadow: 3px 3px red;
+}
+
+.done{
+	text-decoration: line-through;
+}
