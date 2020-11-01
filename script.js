@@ -8,6 +8,11 @@ ul.addEventListener("click", toggleDone);
 ul.addEventListener("click", deleteLi);
 button.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress",addListAfterKeypress);
+// onclick vs event listener:
+// https://stackoverflow.com/questions/6348494/addeventlistener-vs-onclick
+// https://medium.com/@annapeterson89/addeventlistener-vs-onclick-which-one-should-you-draft-into-your-fantasy-football-team-16ea9ae71ee0
+// https://davidwalsh.name/event-delegate - event delegation
+
 
 //functions
 function deleteLi () {
